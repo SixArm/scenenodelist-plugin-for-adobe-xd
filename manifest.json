@@ -1,0 +1,28 @@
+{
+  "name" : "SceneNodeList",
+  "host" : {
+    "app" : "XD",
+    "minVersion" : "21.0"
+  },
+  "id" : "23b5b2b4",
+  "icons" : [ 
+    {
+      "path" : "images/icon@1x.png",
+      "width" : 24,
+      "height" : 24
+    }, 
+    {
+      "path" : "images/icon@2x.png",
+      "width" : 48,
+      "height" : 48
+    } 
+  ],
+  "uiEntryPoints": [
+    {
+        "type": "menu",
+        "label": "Scene Node List",
+        "commandId": "sceneNodeListCommandId"
+    }
+  ],
+  "version" : "1.0.0"
+}

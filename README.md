@@ -36,17 +36,17 @@ Example output:
   <section class="Adobe-XD-Node-Children">
     <div class="Adobe-XD-Artboard">
       <section class="Adobe-XD-Node-Content">
-        Example Artboard
+        Example Web Page
       </section>
       <section class="Adobe-XD-Node-Children">
         <div class="Adobe-XD-Group">
           <section class="Adobe-XD-Node-Content">
-            Group 1
+            Example Splash Screen Area
           </section>
           <section class="Adobe-XD-Node-Children">
             <div class="Adobe-XD-Text">
               <section class="Adobe-XD-Node-Content">
-                Example Text
+                Example Lead Paragraph
               </section>
             </div>
           </section>
@@ -64,9 +64,9 @@ Example output:
 
 ```text
 RootNode
-    Artboard: Example Artboard
-        Group 1
-            Text: Example Text
+    Artboard: Example Web Page
+        Group: Example Splash Screen Area
+            Text: Example Lead Paragragh
 ```
 
 

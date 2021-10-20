@@ -20,9 +20,14 @@
   "uiEntryPoints": [
     {
         "type": "menu",
-        "label": "Scene Node List",
-        "commandId": "sceneNodeListCommandId"
-    }
-  ],
+        "label": "Scene Node List - As HTML - To Clipboard",
+        "commandId": "sceneNodeListAsHTMLCommand"
+    },
+    {
+      "type": "menu",
+      "label": "Scene Node List - As Text - To Clipboard",
+      "commandId": "sceneNodeListAsTextCommand"
+  }
+],
   "version" : "1.0.0"
 }

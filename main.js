@@ -4,82 +4,82 @@ const clipboard = require("clipboard")
 // Create the scene node list as HTML, starting from the document root.
 // Copy the output to the clipboard.
 function sceneNodeListAsHTMLHandler(selection, documentRoot) {
-    clipboard.copyText(nodeAsHTML(documentRoot, 0))
+    clipboard.copyText(nodeAsHTML(documentRoot))
 }
 
 // Create the scene node list as text, starting from the document root.
 // Copy the output to the clipboard.
 function sceneNodeListAsTextHandler(selection, documentRoot) {
-    clipboard.copyText(nodeAsText(documentRoot, 0))
+    clipboard.copyText(nodeAsText(documentRoot))
 }
 
 // Create one scene node as HTML.
 // Return the HTML.
-function nodeAsHTML(node, depth) {
-    if (node instanceof Artboard)  return nodeArtboardAsHTML(node, depth)
+function nodeAsHTML(node) {
+    if (node instanceof Artboard)  return nodeArtboardAsHTML(node)
     if (node instanceof Ellipse)   return ""
-    if (node instanceof Group)     return nodeGroupAsHTML(node, depth)
+    if (node instanceof Group)     return nodeGroupAsHTML(node)
     if (node instanceof Line)      return ""
     if (node instanceof Path)      return ""
     if (node instanceof Polygon)   return ""
     if (node instanceof Rectangle) return ""
-    if (node instanceof Text)      return nodeTextAsHTML(node, depth)
-    return nodeDefaultAsHTML(node, depth)
+    if (node instanceof Text)      return nodeTextAsHTML(node)
+    return nodeDefaultAsHTML(node)
 }
 
 // Create one scene node as text.
 // Return the text.
-function nodeAsText(node, depth) {
-    if (node instanceof Artboard)  return nodeArtboardAsText(node, depth)
+function nodeAsText(node) {
+    if (node instanceof Artboard)  return nodeArtboardAsText(node)
     if (node instanceof Ellipse)   return ""
-    if (node instanceof Group)     return nodeGroupAsText(node, depth)
+    if (node instanceof Group)     return nodeGroupAsText(node)
     if (node instanceof Line)      return ""
     if (node instanceof Path)      return ""
     if (node instanceof Polygon)   return ""
     if (node instanceof Rectangle) return ""
-    if (node instanceof Text)      return nodeTextAsText(node, depth)
-    return nodeDefaultAsText(node, depth)
+    if (node instanceof Text)      return nodeTextAsText(node)
+    return nodeDefaultAsText(node)
 }
 
-function nodeArtboardAsHTML(node, depth) {
-    return nodeDefaultAsHTML(node, depth)   
+function nodeArtboardAsHTML(node) {
+    return nodeDefaultAsHTML(node)   
 }
 
-function nodeArtboardAsText(node, depth) {
-    return nodeDefaultAsText(node, depth)   
+function nodeArtboardAsText(node) {
+    return nodeDefaultAsText(node)   
 }
 
-function nodeGroupAsHTML(node, depth) {
-    return nodeDefaultAsHTML(node, depth)
+function nodeGroupAsHTML(node) {
+    return nodeDefaultAsHTML(node)
 }
 
-function nodeGroupAsText(node, depth) {
-    return nodeDefaultAsText(node, depth)
+function nodeGroupAsText(node) {
+    return nodeDefaultAsText(node)
 }
 
-function nodeTextAsHTML(node, depth) {
-    return nodeDefaultAsHTML(node, depth)
+function nodeTextAsHTML(node) {
+    return nodeDefaultAsHTML(node)
 }
 
-function nodeTextAsText(node, depth) {
-    return nodeDefaultAsText(node, depth)
+function nodeTextAsText(node) {
+    return nodeDefaultAsText(node)
 }
 
-function nodeDefaultAsHTML(node, depth) {
+function nodeDefaultAsHTML(node) {
     let contentHTML = oneline(node.name)
     if (contentHTML != "") {
         contentHTML = "" +
-            indent(1) + "<section class=\"content\">\n" +
+            indent(1) + "<section class=\"Adobe-XD-Node-Content\">\n" +
             indenter(2, contentHTML.trim()) + "\n" +
             indent(1) + "</section>\n"
     }
     var childrenHTML = ""
     node.children.forEach(node => {
-        childrenHTML += nodeAsHTML(node, depth + 2)
+        childrenHTML += nodeAsHTML(node)
     });
     if (childrenHTML != "") {
         childrenHTML = "" +
-            indent(1) + "<section class=\"children\">\n" +
+            indent(1) + "<section class=\"Adobe-XD-Node-Children\">\n" +
             indenter(2, childrenHTML.trim()) + "\n" +
             indent(1) + "</section>\n"
     }
@@ -93,14 +93,14 @@ function nodeDefaultAsHTML(node, depth) {
         "</div>\n"
 }
 
-function nodeDefaultAsText(node, depth) {
+function nodeDefaultAsText(node) {
     let contentText = node.constructor.name + ": " + oneline(node.name) + "\n"
     if (contentText != "") {
         contentText = contentText.trim() + "\n"
     }
     var childrenText = ""
     node.children.forEach(node => {
-        childrenText += nodeAsText(node, depth + 1)
+        childrenText += nodeAsText(node)
     });
     if (childrenText != "") {
         childrenText = indenter(1, childrenText.trim()) + "\n"

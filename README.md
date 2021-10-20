@@ -68,3 +68,13 @@ RootNode
         Group 1
             Text: Example Text
 ```
+
+
+## Tracking
+
+  * Package: scenenodelist-adobe-xd-plugin
+  * Version: 1.0.1
+  * Created: 2021-10-17T00:00:00Z
+  * Updated: 2021-10-20T11:08:44Z
+  * License: GPL-2.0-or-later or contact us for custom license
+  * Contact: Joel Parker Henderson (joel@sixarm.com)

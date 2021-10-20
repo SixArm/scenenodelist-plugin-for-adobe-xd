@@ -4,23 +4,17 @@ const clipboard = require("clipboard")
 // Create the scene node list as HTML, starting from the document root.
 // Copy the output to the clipboard.
 function sceneNodeListAsHTMLHandler(selection, documentRoot) {
-    console.log("sceneNodeListAsHTMLHandler start")
-    var str = nodeAsHTML(documentRoot, 0)
-    clipboard.copyText(str)
-    console.log("sceneNodeListAsHTMLHandler finish")
+    clipboard.copyText(nodeAsHTML(documentRoot, 0))
 }
 
 // Create the scene node list as text, starting from the document root.
 // Copy the output to the clipboard.
 function sceneNodeListAsTextHandler(selection, documentRoot) {
-    console.log("sceneNodeListAsTextHandler start")
-    var str = nodeAsText(documentRoot, 0)
-    clipboard.copyText(str)
-    console.log("sceneNodeListAsTextHandler finish")
+    clipboard.copyText(nodeAsText(documentRoot, 0))
 }
 
 // Create one scene node as HTML.
-// Return the output.
+// Return the HTML.
 function nodeAsHTML(node, depth) {
     if (node instanceof Artboard)  return nodeArtboardAsHTML(node, depth)
     if (node instanceof Ellipse)   return ""
@@ -33,8 +27,8 @@ function nodeAsHTML(node, depth) {
     return nodeDefaultAsHTML(node, depth)
 }
 
-// Create one scene node as HTML.
-// Return the output.
+// Create one scene node as text.
+// Return the text.
 function nodeAsText(node, depth) {
     if (node instanceof Artboard)  return nodeArtboardAsText(node, depth)
     if (node instanceof Ellipse)   return ""

@@ -1,4 +1,4 @@
-# SceneNodeList Adobe XD plugin
+# SceneNodeList plugin for Adobe XD
 
 Export the scene node list as an outline, using HTML or text, and copying the result to the clipboard.
 
@@ -72,9 +72,9 @@ RootNode
 
 ## Tracking
 
-  * Package: scenenodelist-adobe-xd-plugin
-  * Version: 1.0.1
+  * Package: scenenodelist-plugin-for-adobe-xd
+  * Version: 2.0.0
   * Created: 2021-10-17T00:00:00Z
-  * Updated: 2021-10-20T11:08:44Z
+  * Updated: 2021-10-26T21:30:54Z
   * License: GPL-2.0-or-later or contact us for custom license
   * Contact: Joel Parker Henderson (joel@sixarm.com)

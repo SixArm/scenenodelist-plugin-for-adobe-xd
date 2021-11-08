@@ -16,17 +16,17 @@ There are two commands:
 The HTML output uses div tags and section tags.
 
   * Each node is a div.
-  
-  * The class is "Adobe-XD-" and the node type, such as "Adobe-XD-Artboard". 
-  
+
+  * The class is "Adobe-XD-" and the node type, such as "Adobe-XD-Artboard".
+
   * This makes it easy to style results.
 
 Each node div has:
 
   * A section with class "Adobe-XD-Content" that contains the node name.
-  
-  * A section with class "Adobe-XD-Children" that contains the node's children. 
-  
+
+  * A section with class "Adobe-XD-Children" that contains the node's children.
+
   * If a section is blank then it's elided.
 
 Example output:
@@ -73,7 +73,7 @@ RootNode
 ## Tracking
 
   * Package: scenenodelist-plugin-for-adobe-xd
-  * Version: 1.0.3
+  * Version: 1.0.0
   * Created: 2021-10-17T00:00:00Z
   * Updated: 2021-11-08T15:27:18Z
   * License: GPL-2.0-or-later or contact us for custom license

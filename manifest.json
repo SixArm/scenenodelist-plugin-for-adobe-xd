@@ -7,27 +7,42 @@
   "id" : "23b5b2b4",
   "icons" : [ 
     {
-      "path" : "images/icon@1x.png",
+      "path" : "images/icon@24x24.png",
       "width" : 24,
       "height" : 24
     }, 
     {
-      "path" : "images/icon@2x.png",
+      "path" : "images/icon@48x48.png",
       "width" : 48,
       "height" : 48
+    },
+    {
+      "path" : "images/icon@96x96.png",
+      "width" : 96,
+      "height" : 96
+    },
+    {
+      "path" : "images/icon@144x144.png",
+      "width" : 144,
+      "height" : 144
+    },
+    {
+      "path" : "images/icon@192x192.png",
+      "width" : 192,
+      "height" : 192
     } 
   ],
   "uiEntryPoints": [
     {
         "type": "menu",
         "label": "Scene Node List - As HTML - To Clipboard",
-        "commandId": "sceneNodeListAsHTMLCommand"
+        "commandId": "sceneNodeListAsHTML"
     },
     {
       "type": "menu",
       "label": "Scene Node List - As Text - To Clipboard",
-      "commandId": "sceneNodeListAsTextCommand"
-  }
-],
-  "version" : "1.0.0"
+      "commandId": "sceneNodeListAsText"
+    }
+  ],
+  "version" : "1.0.3"
 }

@@ -73,8 +73,8 @@ RootNode
 ## Tracking
 
   * Package: scenenodelist-plugin-for-adobe-xd
-  * Version: 1.0.2
+  * Version: 1.0.3
   * Created: 2021-10-17T00:00:00Z
-  * Updated: 2021-10-26T21:30:54Z
+  * Updated: 2021-11-08T15:27:18Z
   * License: GPL-2.0-or-later or contact us for custom license
   * Contact: Joel Parker Henderson (joel@sixarm.com)

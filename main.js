@@ -60,12 +60,12 @@ function nodeArtboardAsText(node) {
 
 // Render a node that is an ellipse as HTML.
 function nodeEllipseAsHTML(node) {
-    return ""
+    return nodeDefaultAsHTML(node)   
 }
 
 // Render a node that is an ellipse as text.
 function nodeEllipseAsText(node) {
-    return ""
+    return nodeDefaultAsText(node)   
 }
 
 // Render a node that is a group as HTML.
@@ -80,42 +80,42 @@ function nodeGroupAsText(node) {
 
 // Render a node that is a line as HTML.
 function nodeLineAsHTML(node) {
-    return ""
+    return nodeDefaultAsHTML(node)   
 }
 
 // Render a node that is a line as text.
 function nodeLineAsText(node) {
-    return ""
+    return nodeDefaultAsText(node)
 }
 
 // Render a node that is a path as HTML.
 function nodePathAsHTML(node) {
-    return ""
+    return nodeDefaultAsHTML(node)   
 }
 
 // Render a node that is a path as text.
 function nodePathAsText(node) {
-    return ""
+    return nodeDefaultAsText(node)
 }
 
 // Render a node that is a polygon as HTML.
 function nodePolygonAsHTML(node) {
-    return ""
+    return nodeDefaultAsHTML(node)   
 }
 
 // Render a node that is a polygon as text.
 function nodePolygonAsText(node) {
-    return ""
+    return nodeDefaultAsText(node)
 }
 
 // Render a node that is a rectangle as HTML.
 function nodeRectangleAsHTML(node) {
-    return ""
+    return nodeDefaultAsHTML(node)   
 }
 
 // Render a node that is a rectangle as text.
 function nodeRectangleAsText(node) {
-    return ""
+    return nodeDefaultAsText(node)
 }
 
 // Render a node that is text as HTML.

@@ -12,6 +12,19 @@ There are two commands:
 
 * Scene Node List - As Text - To Clipboard
 
+See below for more about the commands.
+
+
+## Install
+
+Launch Adobe XD and open a typical file, such as a file that has artboards.
+
+Choose the Adobe XD menu "Plugins", then the menu item "Browse Plugins".
+
+Tap the search icon, then search for "SceneNodeList".
+
+You see the SceneNodeList plugin description, then tap the link "Install".
+
 
 ## Scene Node List - As HTML - To Clipboard
 

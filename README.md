@@ -21,9 +21,20 @@ Launch Adobe XD and open a typical file, such as a file that has artboards.
 
 Choose the Adobe XD menu "Plugins", then the menu item "Browse Plugins".
 
-Tap the search icon, then search for "SceneNodeList".
+Tap the search magnifying glass icon, then search for "SceneNodeList".
 
 You see the SceneNodeList plugin description, then tap the link "Install".
+
+
+## Usage
+
+Launch Adobe XD and open a typical file, such as a file that has artboards.
+
+Choose the Adobe XD menu "Plugins", then the menu item "SceneNodeList", then the command "Scene Node List - As Text - To Clipboard".
+
+The plugin creates an outline of your project and copies it to your system clipboard.
+
+You can now paste the outline anywhere you want, such as into a word processor or text editor.
 
 
 ## Scene Node List - As HTML - To Clipboard

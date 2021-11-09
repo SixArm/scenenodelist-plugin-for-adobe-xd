@@ -2,7 +2,9 @@
 
 Export the scene node list as an outline, using HTML or text, and copying the result to the clipboard.
 
-This is a quick easy way to show what your file contains.
+* [Adobe Exchange plugin details for SceneNodeList](https://exchange.adobe.com/creativecloud/plugindetails.html/app/cc/23b5b2b4)
+
+This plugin provides a quick easy way to show what your Adobe XD file contains.
 
 There are two commands:
 
